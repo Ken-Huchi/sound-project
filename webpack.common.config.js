@@ -41,15 +41,15 @@ module.exports = {
       return [autoprefixer];
     },
     plugins: [
-      new ProvidePlugin({
-        $: 'jquery',
-        THREE: `${SRC}/js/lib/three.js`,
-      })
+      // new ProvidePlugin({
+      //   $: 'jquery',
+      //   THREE: `${SRC}/js/lib/three.js`,
+      // })
     ], 
     resolve: {
       extensions: ['', '.js', '.css'],
       alias: {
-        'three-extras': path.resolve(`${__dirname}/node_modules/three/examples/js/`),
+        // 'three-extras': path.resolve(`${__dirname}/node_modules/three/examples/js/`),
       }
     }
 };

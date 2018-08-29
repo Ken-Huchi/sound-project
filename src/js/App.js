@@ -30,7 +30,7 @@ class App {
     navigator.mediaDevices.getUserMedia({audio: true})
       .then((stream) => {
         this.myReco = new MyRecorder(this.audioCtx, stream);
-        return loadSound(this.audioCtx, '/assets/music/Alpha-Waves-10Hz.wav');
+        return loadSound(this.audioCtx, '/assets/music/35.1.7.mp3');
       }, (err) => {
         console.log('Uh oh... unable to get stream...', err)
       })
